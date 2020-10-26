@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,215 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Seleccione Fecha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QDy-aF-bOe" customClass="ISILTextField" customModule="DemoPicker" customModuleProvider="target">
+                                <rect key="frame" x="20" y="75" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rnN-nF-phy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="TVq-oP-gFN"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Seleccione Documento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5V-NP-x08" customClass="ISILTextField" customModule="DemoPicker" customModuleProvider="target">
+                                <rect key="frame" x="20" y="150" width="374" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jgO-b0-FTB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" cocoaTouchSystemColor="darkTextColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="TgK-4t-gvb"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="b5V-NP-x08" firstAttribute="top" secondItem="QDy-aF-bOe" secondAttribute="bottom" constant="35" id="23k-9q-tXQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QDy-aF-bOe" secondAttribute="trailing" constant="20" id="943-Yu-DAk"/>
+                            <constraint firstItem="b5V-NP-x08" firstAttribute="trailing" secondItem="QDy-aF-bOe" secondAttribute="trailing" id="KXh-cG-6FS"/>
+                            <constraint firstItem="QDy-aF-bOe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="i1P-ir-19d"/>
+                            <constraint firstItem="QDy-aF-bOe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="xLG-Qd-VHU"/>
+                            <constraint firstItem="b5V-NP-x08" firstAttribute="leading" secondItem="QDy-aF-bOe" secondAttribute="leading" id="z37-bn-hAc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="txtDate" destination="QDy-aF-bOe" id="3a2-gQ-2a4"/>
+                        <outlet property="txtDocument" destination="b5V-NP-x08" id="N8I-mk-v4R"/>
+                        <segue destination="G4J-Q5-IJQ" kind="presentation" identifier="DatePickerViewController" animates="NO" modalPresentationStyle="overCurrentContext" id="M0n-0c-whL"/>
+                        <segue destination="GhX-WE-TuY" kind="presentation" identifier="PickerViewController" animates="NO" modalPresentationStyle="overCurrentContext" id="UMk-Bp-1TG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="103" y="-100"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="Ri1-JD-Mns">
+            <objects>
+                <viewController id="GhX-WE-TuY" customClass="PickerViewController" customModule="DemoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZHY-my-7nN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R7r-L8-oEd">
+                                <rect key="frame" x="0.0" y="660" width="414" height="236"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7a-21-Rao">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="GhX-WE-TuY" id="WID-yX-AMx"/>
+                                            <outlet property="delegate" destination="GhX-WE-TuY" id="uLo-r8-cYp"/>
+                                        </connections>
+                                    </pickerView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="k7a-21-Rao" firstAttribute="top" secondItem="R7r-L8-oEd" secondAttribute="top" id="7Mc-Yg-Qqf"/>
+                                    <constraint firstItem="k7a-21-Rao" firstAttribute="leading" secondItem="R7r-L8-oEd" secondAttribute="leading" id="ITx-KK-W6z"/>
+                                    <constraint firstAttribute="bottom" secondItem="k7a-21-Rao" secondAttribute="bottom" constant="20" id="bJl-Kl-B2F"/>
+                                    <constraint firstAttribute="trailing" secondItem="k7a-21-Rao" secondAttribute="trailing" id="ut8-t0-s9w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="Black_50"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="R7r-L8-oEd" firstAttribute="trailing" secondItem="YRd-RU-yqZ" secondAttribute="trailing" id="cwl-XN-yqT"/>
+                            <constraint firstItem="R7r-L8-oEd" firstAttribute="leading" secondItem="YRd-RU-yqZ" secondAttribute="leading" id="fot-JK-Rty"/>
+                            <constraint firstAttribute="bottom" secondItem="R7r-L8-oEd" secondAttribute="bottom" id="rEl-U8-SYM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YRd-RU-yqZ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="qeZ-e9-Oda" appends="YES" id="vOx-Pu-J2U"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="OsF-lF-emv"/>
+                    <connections>
+                        <outlet property="pickerContainer" destination="R7r-L8-oEd" id="92t-Xq-7yw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EjU-Gu-qOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="qeZ-e9-Oda">
+                    <connections>
+                        <action selector="tapToClose:" destination="GhX-WE-TuY" id="4ZZ-uh-Tac"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="967" y="237"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="Qak-ea-MG2">
+            <objects>
+                <viewController id="G4J-Q5-IJQ" customClass="DatePickerViewController" customModule="DemoPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ixj-Hw-87z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLo-a9-GKe">
+                                <rect key="frame" x="0.0" y="660" width="414" height="236"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="UbJ-4s-RHs">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                                        <connections>
+                                            <action selector="changeDateSelect:" destination="G4J-Q5-IJQ" eventType="valueChanged" id="ykE-lX-bm3"/>
+                                        </connections>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UbJ-4s-RHs" secondAttribute="trailing" id="Uxi-Rn-Pld"/>
+                                    <constraint firstAttribute="bottom" secondItem="UbJ-4s-RHs" secondAttribute="bottom" constant="20" id="XhS-vi-8EE"/>
+                                    <constraint firstItem="UbJ-4s-RHs" firstAttribute="leading" secondItem="FLo-a9-GKe" secondAttribute="leading" id="anv-Ax-a0a"/>
+                                    <constraint firstItem="UbJ-4s-RHs" firstAttribute="top" secondItem="FLo-a9-GKe" secondAttribute="top" id="zww-JO-0KL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="Black_50"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="FLo-a9-GKe" firstAttribute="leading" secondItem="rVn-18-x7U" secondAttribute="leading" id="cp4-n3-qlS"/>
+                            <constraint firstItem="FLo-a9-GKe" firstAttribute="trailing" secondItem="rVn-18-x7U" secondAttribute="trailing" id="flT-2m-CDk"/>
+                            <constraint firstAttribute="bottom" secondItem="FLo-a9-GKe" secondAttribute="bottom" id="lvB-jx-FBA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rVn-18-x7U"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WAE-3A-o7X" appends="YES" id="uaW-ed-pb4"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="i0u-BR-qh9"/>
+                    <connections>
+                        <outlet property="pickerContainer" destination="FLo-a9-GKe" id="cS5-8f-YRG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yuq-pc-c2n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WAE-3A-o7X">
+                    <connections>
+                        <action selector="tapToClose:" destination="G4J-Q5-IJQ" id="KUP-H1-0Z2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="968" y="-425"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Black_50">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

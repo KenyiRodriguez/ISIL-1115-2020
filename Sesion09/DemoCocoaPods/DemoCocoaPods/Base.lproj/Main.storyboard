@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s3V-1F-iAZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoCocoaPods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bVe-df-p48" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="HrD-6t-tpl"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bVe-df-p48" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1ML-Vr-zsn"/>
+                            <constraint firstAttribute="bottom" secondItem="bVe-df-p48" secondAttribute="bottom" id="5Q9-1y-UFO"/>
+                            <constraint firstItem="bVe-df-p48" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HBC-eO-gDZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bVe-df-p48" secondAttribute="trailing" id="bkW-vc-rc8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="bVe-df-p48" id="K1b-de-RDQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+        <!--Youtube Player View Controller-->
+        <scene sceneID="XZY-gF-4Q2">
+            <objects>
+                <viewController id="s3V-1F-iAZ" customClass="YoutubePlayerViewController" customModule="DemoCocoaPods" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o0D-Lw-JIi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUd-JT-xoL" customClass="YouTubePlayerView" customModule="YouTubePlayer_Swift">
+                                <rect key="frame" x="0.0" y="44" width="414" height="245"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SUd-JT-xoL" secondAttribute="height" multiplier="414:245" id="7S9-KI-oDK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="SUd-JT-xoL" firstAttribute="top" secondItem="uYq-it-Fw2" secondAttribute="top" id="3N3-8p-r0M"/>
+                            <constraint firstItem="SUd-JT-xoL" firstAttribute="trailing" secondItem="uYq-it-Fw2" secondAttribute="trailing" id="LuH-CH-lxY"/>
+                            <constraint firstItem="SUd-JT-xoL" firstAttribute="leading" secondItem="uYq-it-Fw2" secondAttribute="leading" id="opS-Ai-imY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uYq-it-Fw2"/>
+                    </view>
+                    <connections>
+                        <outlet property="youtubePlayer" destination="SUd-JT-xoL" id="myk-X3-OAW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTV-7b-IgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.6521739130435" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
