@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		112E679162B93ABD85C4B2F8 /* Pods_DemoCocoaPods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FCFF5346B88EC0AC78A02F /* Pods_DemoCocoaPods.framework */; };
+		FB3C64552562B2D700D7157B /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C64542562B2D700D7157B /* DownloadImage.swift */; };
 		FB521E0C254CEAC000DD9C6B /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB521E0B254CEAC000DD9C6B /* PlacesViewController.swift */; };
 		FB521E0E254CFA6900DD9C6B /* PlaceBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB521E0D254CFA6900DD9C6B /* PlaceBE.swift */; };
 		FB521E10254CFB4900DD9C6B /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB521E0F254CFB4900DD9C6B /* PlaceTableViewCell.swift */; };
@@ -17,7 +18,6 @@
 		FB8AA4652543AECB00B81D56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8AA4632543AECB00B81D56 /* Main.storyboard */; };
 		FB8AA4672543AECF00B81D56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8AA4662543AECF00B81D56 /* Assets.xcassets */; };
 		FB8AA46A2543AECF00B81D56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8AA4682543AECF00B81D56 /* LaunchScreen.storyboard */; };
-		FBD196EA255F5AC7000E0375 /* DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD196E9255F5AC7000E0375 /* DownloadImage.swift */; };
 		FBD196EC255F5B0A000E0375 /* RegisterPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD196EB255F5B0A000E0375 /* RegisterPlaceViewController.swift */; };
 		FBD196EE255F6FE2000E0375 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD196ED255F6FE2000E0375 /* AlertManager.swift */; };
 		FBD196F0255F755B000E0375 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD196EF255F755B000E0375 /* Images.xcassets */; };
@@ -27,6 +27,7 @@
 		60FCFF5346B88EC0AC78A02F /* Pods_DemoCocoaPods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCocoaPods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62230B0A242EAF788ECAB71 /* Pods-DemoCocoaPods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCocoaPods.release.xcconfig"; path = "Target Support Files/Pods-DemoCocoaPods/Pods-DemoCocoaPods.release.xcconfig"; sourceTree = "<group>"; };
 		CFC18E4A7DA05279375CC6D4 /* Pods-DemoCocoaPods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCocoaPods.debug.xcconfig"; path = "Target Support Files/Pods-DemoCocoaPods/Pods-DemoCocoaPods.debug.xcconfig"; sourceTree = "<group>"; };
+		FB3C64542562B2D700D7157B /* DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadImage.swift; sourceTree = "<group>"; };
 		FB521E0B254CEAC000DD9C6B /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		FB521E0D254CFA6900DD9C6B /* PlaceBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBE.swift; sourceTree = "<group>"; };
 		FB521E0F254CFB4900DD9C6B /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		FB8AA4662543AECF00B81D56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB8AA4692543AECF00B81D56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB8AA46B2543AECF00B81D56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBD196E9255F5AC7000E0375 /* DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DownloadImage.swift; path = ../../../Sesion11/DescargaDeImagenes/DescargaDeImagenes/DownloadImage.swift; sourceTree = "<group>"; };
 		FBD196EB255F5B0A000E0375 /* RegisterPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPlaceViewController.swift; sourceTree = "<group>"; };
 		FBD196ED255F6FE2000E0375 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		FBD196EF255F755B000E0375 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -105,8 +105,8 @@
 				FB521E0D254CFA6900DD9C6B /* PlaceBE.swift */,
 				FB521E0B254CEAC000DD9C6B /* PlacesViewController.swift */,
 				FB521E0F254CFB4900DD9C6B /* PlaceTableViewCell.swift */,
-				FBD196E9255F5AC7000E0375 /* DownloadImage.swift */,
 				FBD196EB255F5B0A000E0375 /* RegisterPlaceViewController.swift */,
+				FB3C64542562B2D700D7157B /* DownloadImage.swift */,
 				FBD196ED255F6FE2000E0375 /* AlertManager.swift */,
 			);
 			path = DemoCocoaPods;
@@ -229,8 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB521E0C254CEAC000DD9C6B /* PlacesViewController.swift in Sources */,
+				FB3C64552562B2D700D7157B /* DownloadImage.swift in Sources */,
 				FB8AA4622543AECB00B81D56 /* MapViewController.swift in Sources */,
-				FBD196EA255F5AC7000E0375 /* DownloadImage.swift in Sources */,
 				FB8AA45E2543AECB00B81D56 /* AppDelegate.swift in Sources */,
 				FB521E0E254CFA6900DD9C6B /* PlaceBE.swift in Sources */,
 				FB8AA4602543AECB00B81D56 /* SceneDelegate.swift in Sources */,
