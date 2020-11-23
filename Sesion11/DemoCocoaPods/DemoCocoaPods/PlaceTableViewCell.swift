@@ -24,6 +24,13 @@ class PlaceTableViewCell: UITableViewCell {
         
         self.lblName.text       = self.objPlace.place_name
         self.lblAddress.text    = self.objPlace.place_address
+        
+        self.imgPlace.downloadImageInUrlString(self.objPlace.place_urlImage) { (image, urlImage) in
+            
+            if self.objPlace.place_urlImage == urlImage {
+                self.imgPlace.image = image
+            }
+        }
     }
 
     override func draw(_ rect: CGRect) {

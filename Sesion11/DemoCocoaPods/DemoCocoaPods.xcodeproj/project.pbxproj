@@ -11,6 +11,7 @@
 		FB0C2DD5255030C5001FDE68 /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C2DD4255030C5001FDE68 /* PlacesViewController.swift */; };
 		FB0C2DD7255043A3001FDE68 /* PlaceBE.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C2DD6255043A3001FDE68 /* PlaceBE.swift */; };
 		FB0C2DD92550445F001FDE68 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C2DD82550445F001FDE68 /* PlaceTableViewCell.swift */; };
+		FB26543225597FDF00C388AF /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26543125597FDF00C388AF /* ImageDownload.swift */; };
 		FBA9EDFD2546F75C00EBFC72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9EDFC2546F75C00EBFC72 /* AppDelegate.swift */; };
 		FBA9EDFF2546F75C00EBFC72 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9EDFE2546F75C00EBFC72 /* SceneDelegate.swift */; };
 		FBA9EE012546F75C00EBFC72 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9EE002546F75C00EBFC72 /* MapViewController.swift */; };
@@ -27,6 +28,7 @@
 		FB0C2DD4255030C5001FDE68 /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
 		FB0C2DD6255043A3001FDE68 /* PlaceBE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceBE.swift; sourceTree = "<group>"; };
 		FB0C2DD82550445F001FDE68 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
+		FB26543125597FDF00C388AF /* ImageDownload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageDownload.swift; path = ../../DescargaDeImagenes/DescargaDeImagenes/ImageDownload.swift; sourceTree = "<group>"; };
 		FBA9EDF92546F75C00EBFC72 /* DemoCocoaPods.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCocoaPods.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9EDFC2546F75C00EBFC72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9EDFE2546F75C00EBFC72 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				FB0C2DD4255030C5001FDE68 /* PlacesViewController.swift */,
 				FB0C2DD6255043A3001FDE68 /* PlaceBE.swift */,
 				FB0C2DD82550445F001FDE68 /* PlaceTableViewCell.swift */,
+				FB26543125597FDF00C388AF /* ImageDownload.swift */,
 			);
 			path = DemoCocoaPods;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				FB0C2DD5255030C5001FDE68 /* PlacesViewController.swift in Sources */,
 				FBA9EE012546F75C00EBFC72 /* MapViewController.swift in Sources */,
 				FBA9EDFD2546F75C00EBFC72 /* AppDelegate.swift in Sources */,
+				FB26543225597FDF00C388AF /* ImageDownload.swift in Sources */,
 				FB0C2DD7255043A3001FDE68 /* PlaceBE.swift in Sources */,
 				FBA9EDFF2546F75C00EBFC72 /* SceneDelegate.swift in Sources */,
 				FB0C2DD92550445F001FDE68 /* PlaceTableViewCell.swift in Sources */,
